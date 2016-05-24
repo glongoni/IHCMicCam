@@ -1,0 +1,3 @@
+[submodule "QMediaPlayer"]
+	path = QMediaPlayer
+	url = https://github.com/glongoni/QMediaPlayer
