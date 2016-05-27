@@ -1,0 +1,14 @@
+QMediaPlayer/deps/INTERNALS/include/*
+QMediaPlayer/deps/INTERNALS/lib/*
+Debug
+Release
+GeneratedFiles
+*.sdf
+*.user
+ipch
+*.opensdf
+*.suo
+*.suo
+*.txt
+*.log
+*.tlog

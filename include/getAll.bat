@@ -1,0 +1,1 @@
+call ..\scripts\copyAll.bat \deps\include .\ /W
