@@ -5,7 +5,9 @@ IHCMicCam::IHCMicCam(QWidget *parent)
 {
 	ui.setupUi(this);
 
-	connect(ui.cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+	settingsWindow = new CallSettings();
+
+	connect(ui.callSettingsButton, SIGNAL(clicked()), this, SLOT(openSettings()));
 }
 
 IHCMicCam::~IHCMicCam()
@@ -13,7 +15,7 @@ IHCMicCam::~IHCMicCam()
 
 }
 
-void IHCMicCam::close()
+void IHCMicCam::openSettings()
 {
 	exit(0);
 }

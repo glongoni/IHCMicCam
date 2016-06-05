@@ -2,6 +2,7 @@
 #define IHCMICCAM_H
 
 #include <QtWidgets/QMainWindow>
+#include <CallSettings.h>
 #include "ui_ihcmiccam.h"
 
 class IHCMicCam : public QMainWindow
@@ -14,9 +15,10 @@ public:
 
 private:
 	Ui::IHCMicCamClass ui;
+	CallSettings* settingsWindow;
 
 public slots:
-	void close();
+	void openSettings();
 
 };
 
