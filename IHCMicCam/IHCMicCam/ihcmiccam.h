@@ -2,8 +2,14 @@
 #define IHCMICCAM_H
 
 #include <QtWidgets/QMainWindow>
-#include <CallSettings.h>
 #include "ui_ihcmiccam.h"
+#include <QList>
+
+class CallSettings;
+class IPCamPlayer;
+class QAudioPlayer;
+class CameraHandler;
+
 
 class IHCMicCam : public QMainWindow
 {
@@ -13,12 +19,18 @@ public:
 	IHCMicCam(QWidget *parent = 0);
 	~IHCMicCam();
 
+	IPCamPlayer* camPlayer;
+	QList<QAudioPlayer*> audioPlayers;
+	CameraHandler* camHandler;
+	
+
 private:
 	Ui::IHCMicCamClass ui;
 	CallSettings* settingsWindow;
 
 public slots:
 	void openSettings();
+	void startCall();
 
 };
 

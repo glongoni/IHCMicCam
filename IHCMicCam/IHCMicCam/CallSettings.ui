@@ -11,18 +11,21 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Settings</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="1" column="1">
     <widget class="QLabel" name="camAddressLabel">
      <property name="text">
-      <string>Endereço da câmera do parceiro</string>
+      <string>Partner cam address</string>
      </property>
     </widget>
    </item>
    <item row="1" column="2">
     <widget class="QLineEdit" name="camAddressLineEdit">
+     <property name="text">
+      <string>143.54.12.154</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -30,6 +33,9 @@
    </item>
    <item row="2" column="2">
     <widget class="QLineEdit" name="pcAddressLineEdit">
+     <property name="text">
+      <string>143.54.12.20</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -38,7 +44,7 @@
    <item row="2" column="1">
     <widget class="QLabel" name="pcAddressLabel">
      <property name="text">
-      <string>Endereço computador do parceiro</string>
+      <string>Partner address</string>
      </property>
     </widget>
    </item>
